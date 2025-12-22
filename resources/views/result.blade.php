@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
     <style>
-        body { font-family: 'Sarabun', sans-serif; background: #f3f4f6; min-height: 100vh; display: flex; align-items: center; justify-content: center; py-5; }
+        body { font-family: 'Sarabun', sans-serif; background: #f3f4f6; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
         .card-result { background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 100%; max-width: 500px; overflow: hidden; position: relative; }
 
-        /* Header แบบมีส่วนโค้ง */
+        /* Header สี */
         .card-header-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            height: 150px;
+            height: 140px;
             width: 100%;
         }
 
-        .card-body { padding: 0 30px 30px 30px; margin-top: -75px; /* ดึงเนื้อหาขึ้นไปทับ Header */ }
+        .card-body { padding: 0 30px 30px 30px; margin-top: -70px; /* ดึงเนื้อหาขึ้น */ }
 
         .info-item { display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px dashed #eee; padding-bottom: 8px; }
         .label { font-weight: bold; color: #666; font-size: 0.95rem; }
@@ -38,10 +38,10 @@
                     <img src="{{ asset('uploads/' . $data['photo_name']) }}"
                          alt="Profile Photo"
                          class="shadow"
-                         style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 5px solid white;">
+                         style="width: 140px; height: 140px; object-fit: cover; border-radius: 50%; border: 5px solid white;">
                 @else
                     <div class="d-inline-flex align-items-center justify-content-center bg-secondary text-white shadow"
-                         style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid white;">
+                         style="width: 140px; height: 140px; border-radius: 50%; border: 5px solid white;">
                         <i class="bi bi-person-fill" style="font-size: 4rem;"></i>
                     </div>
                 @endif
@@ -90,7 +90,7 @@
                 </span>
             </div>
 
-            <a href="{{ url('/html101') }}" class="btn btn-outline-primary w-100 rounded-pill mt-3">
+            <a href="{{ url('/') }}" class="btn btn-outline-primary w-100 rounded-pill mt-3">
                 <i class="bi bi-arrow-left"></i> กลับหน้าหลัก
             </a>
         </div>
